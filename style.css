@@ -1,0 +1,130 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap'); /*Teko*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap'); /*Lobster Two*/
+
+/*Variables*/
+:root{
+    --hot-weather: #FFBF00;
+    --hot-weather2: #FFAC1C;
+    --cold-weather: #0096FF;
+    --cold-weather2: #6082B6;
+    --main-accent : #D2042D;
+    --main-accent2: #DC143C;
+    --main-accent3: #C04000
+}
+/*Animations*/
+
+/*Main Styling*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(
+        90deg,
+        var(--main-accent),
+        var(--main-accent2),
+        var(--main-accent3)
+    );
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #FFAC1C;
+    height: 5vw;
+    min-height: 30px;
+    max-height: 50px;
+    width: 100vw;
+    min-width: 100vw;
+}
+#info{
+    font-size: 30px;
+    transition: 100ms linear;
+    margin: 0;
+    text-align: center;
+}
+#info:hover{
+    transform: scale(1.1);
+    margin: 0;
+}
+#info{
+    font-family: 'Teko';
+}
+input{
+    background-color: var(--cold-weather2);
+    outline-color: transparent;
+    border-color: transparent;
+    text-align: center;
+    font-family: 'Lobster Two';
+    border-radius: 30px;
+    transition: 100ms linear;
+    margin-top: 50px;
+    width: 40vw;
+    max-width: 500px;
+}
+input::placeholder{
+    color: black;
+}
+input:hover , button:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 50px var(--cold-weather);
+    border: 2px white solid;
+}
+input:focus{
+    outline: none;
+    border: none;
+}
+button{
+    font-family: "Lobster Two";
+    background-color: var(--cold-weather2);
+    outline: transparent;
+    border: 2px solid var(--cold-weather);
+    border-radius:20px;
+    transition: 100ms linear;
+    width: 20vw;
+    max-width: 70px;
+}
+#search{
+    display: flex;
+    justify-content: center;
+}
+#submit{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-top: 5px;
+}
+#weather-info{
+    background-color: var(--cold-weather);
+    width: 50vw;
+    margin: 60px auto;
+    max-width: 300px;
+    height: 50vw;
+    max-height: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 100px var(--hot-weather2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+#place-info, #temperature, #feel, #max, #min{
+    font-family: 'Lobster Two';
+    text-align: center;
+    font-size: 3vw;
+}
+#note,#note2{
+    font-family: 'Teko';
+    text-align: center;
+}
+
+@media (min-width: 900px) {
+    #place-info, #temperature, #feel, #max, #min{
+        font-family: 'Lobster Two';
+        text-align: center;
+        font-size: 1.5vw;
+    }
+    
+}
+

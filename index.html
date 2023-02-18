@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Time Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="info" id="info">
+           Weather App
+        </div>
+    </header>
+    <main>
+        <div class="search" id="search">
+            <input type="text" id="input" placeholder="Enter City.......">
+        </div>
+            <div class="submit" id="submit">
+            <button class="submit" id="submit" onclick="fetchWeather()">Search</button>
+        </div>
+        <div class="weather-info" id="weather-info">
+            <div class="place-info" id="place-info">
+                     City Name, Country Code
+            </div>
+            <div class="main-temp" id="main-temp">
+                <p class="temperature" id="temperature">Current Temperature : <span class="temp" id="temp">0°C</span></p>
+                <p class="feel" id="feel">Feels like : <span class="feels-like like" id="feels_like">0°C</span>
+                </p>
+                <p class="max" id="max">Maximum Temperature : <span class="temp_max" id="temp_max">0°C</span></p>
+                <p class="min" id="min">MinimumTemperature : <span class="temp_min" id="temp_min">0°C</span></p>
+            </div>
+        </div>
+    </main>
+    <div class="note" id="note">
+        Note : This Information Is From An Open Souce Website So Some Information Can be Wrong
+    </div>
+    <div class="note2" id="note2">
+        Desined And Coded By Tushar Bajpai
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
